@@ -1,0 +1,9 @@
+C:\Proyectos\PiquiNet\GyM\PiquiNet.GyM.Solution\PiquiNet.GyM.Entities\bin\Release\PiquiNet.GyM.Entities.dll
+C:\Proyectos\PiquiNet\GyM\PiquiNet.GyM.Solution\PiquiNet.GyM.Entities\bin\Release\PiquiNet.GyM.Entities.pdb
+C:\Proyectos\PiquiNet\GyM\PiquiNet.GyM.Solution\PiquiNet.GyM.Entities\bin\Release\DPUruNet.dll
+C:\Proyectos\PiquiNet\GyM\PiquiNet.GyM.Solution\PiquiNet.GyM.Entities\bin\Release\DPUruNet.xml
+C:\Proyectos\PiquiNet\GyM\PiquiNet.GyM.Solution\PiquiNet.GyM.Entities\obj\Release\PiquiNet.GyM.Entities.csprojAssemblyReference.cache
+C:\Proyectos\PiquiNet\GyM\PiquiNet.GyM.Solution\PiquiNet.GyM.Entities\obj\Release\PiquiNet.GyM.Entities.csproj.CoreCompileInputs.cache
+C:\Proyectos\PiquiNet\GyM\PiquiNet.GyM.Solution\PiquiNet.GyM.Entities\obj\Release\PiquiNet.GyM.Entities.csproj.CopyComplete
+C:\Proyectos\PiquiNet\GyM\PiquiNet.GyM.Solution\PiquiNet.GyM.Entities\obj\Release\PiquiNet.GyM.Entities.dll
+C:\Proyectos\PiquiNet\GyM\PiquiNet.GyM.Solution\PiquiNet.GyM.Entities\obj\Release\PiquiNet.GyM.Entities.pdb

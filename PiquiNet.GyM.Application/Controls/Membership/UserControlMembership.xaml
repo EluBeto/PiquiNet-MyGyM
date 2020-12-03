@@ -1,0 +1,159 @@
+﻿<UserControl x:Class="PiquiNet.GyM.Application.Controls.Membership.UserControlMembership"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PiquiNet.GyM.Application.Controls.Membership"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="auto" Width="auto">
+
+    <materialDesign:TransitioningContent x:Name="TransitioningContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+        <Grid x:Name="gridReg" Background="#FFF5F1F1" Opacity="0.90">
+
+            <StackPanel Margin="0,0,0.333,0" Background="#FF4F4D4D" Height="35" VerticalAlignment="Top">
+                <TextBlock Text="Membrecías" FontSize="24" HorizontalAlignment="Center" Margin="0 5 0 0" Foreground="White" FontFamily="Century Gothic"/>
+                <TextBlock x:Name="Uid" Visibility="Collapsed"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,230,0,0" Background="#FF4F4D4D" Height="35" VerticalAlignment="Top">
+                <TextBlock Text="Registro de Membrecías" FontSize="18" HorizontalAlignment="Center" Margin="0 5 0 0" Foreground="White" FontFamily="Century Gothic"/>
+            </StackPanel>
+
+            <Grid Margin="0,60,0,0" VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Margin="20 0 0 5" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Height="40" Width="178">
+                    <TextBox x:Name="txtNombre" materialDesign:HintAssist.Hint="Nombre" MaxLength="19" CharacterCasing="Upper" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                </Grid>
+                <Grid Margin="5 0 0 5" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="40" Width="178">
+                    <TextBox x:Name="txtAP"  materialDesign:HintAssist.Hint="Precio" MaxLength="19" CharacterCasing="Upper" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                </Grid>
+
+                <Grid Margin="5 0 0 5" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" Height="40" Width="178">
+                    <TextBlock x:Name="lblEstatus" Text="Estatus" Visibility="Collapsed" Margin="10,15,10,10"></TextBlock>
+                    <ToggleButton x:Name="rbEstatus" Style="{StaticResource MaterialDesignSwitchAccentToggleButton}"
+                                  ToolTip="MaterialDesignSwitchAccentToggleButton"
+                                  Margin="5,15,5,5"
+                                  Visibility="Collapsed"
+                                  Click="RbEstatus_Click"/>
+                </Grid>
+
+                <Grid Margin="20 0 0 5" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" Height="40" Width="178"></Grid>
+                <Grid Margin="5 0 0 5" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Height="40" Width="178">
+                    <Button x:Name="btnGuardar" Click="BtnGuardar_Click" Visibility="Collapsed">
+                        Guardar
+                    </Button>
+                    <Button x:Name="btnModifica" Click="BtnModifica_Click" Visibility="Collapsed">
+                        Modificar
+                    </Button>
+                </Grid>
+                <Grid Margin="5 0 10 5" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Left" Height="40" Width="178">
+                    <Button x:Name="btnLimpiar" Background="#FFD29941" BorderBrush="#FFA1A3A5" Opacity="0.8" Click="BtnLimpiar_Click">
+                        Limpiar
+                    </Button>
+                </Grid>
+            </Grid>
+
+            <Grid Margin="0, 280, 0, 10" VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="300"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <materialDesign:ColorZone Grid.Row="0"
+                                          Margin="0,0,60,0"
+                                          VerticalAlignment="Top"
+                                          HorizontalAlignment="Right"
+                                          Mode="Light"
+                                          Padding="2">
+                    <DockPanel>
+                        <StackPanel Orientation="Horizontal"
+                            materialDesign:RippleAssist.IsCentered="True">
+                            <materialDesign:ColorZone Mode="Standard"
+                                              Padding="0 0 0 0"
+                                              CornerRadius="2"
+                                              Panel.ZIndex="1"
+                                              Margin="0 0 0 0"
+                                              materialDesign:ShadowAssist.ShadowDepth="Depth1">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Button Style="{DynamicResource MaterialDesignToolButton}">
+                                        <materialDesign:PackIcon Kind="Magnify" Opacity=".56" />
+                                    </Button>
+                                    <TextBox x:Name="txtBuscaRegistros"
+                                             Grid.Column="1"
+                                             Margin="8 0 0 0"
+                                             materialDesign:HintAssist.Hint="Busca Membrecia"
+                                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                             BorderThickness="0"
+                                             MinWidth="200"
+                                             VerticalAlignment="Center"
+                                             KeyDown="TxtBuscaRegistros_KeyDown"/>
+                                    <Button Style="{DynamicResource MaterialDesignToolButton}"
+                                            Grid.Column="2">
+                                    </Button>
+                                </Grid>
+                            </materialDesign:ColorZone>
+                        </StackPanel>
+                    </DockPanel>
+                </materialDesign:ColorZone>
+
+                <StackPanel x:Name="spListView" 
+                            Grid.Row="1" 
+                            VerticalAlignment="Top" 
+                            HorizontalAlignment="Left" 
+                            Height="auto"
+                            Width="auto">
+
+                    <StackPanel.Resources>
+                        <Style x:Key="itemstyle" TargetType="{x:Type ListViewItem}">
+                            <EventSetter Event="MouseDoubleClick"  Handler="HandleDoubleClick"/>
+                        </Style>
+                    </StackPanel.Resources>
+
+                    <ListView x:Name="lvUsers" 
+                          Margin="10 0 0 0"
+                          ItemContainerStyle="{StaticResource itemstyle}" 
+                          VerticalAlignment="Top"
+                          FontFamily="Ebrima" 
+                          FontWeight="Bold"
+                          Height="auto"
+                          Width="auto"
+                          ScrollViewer.VerticalScrollBarVisibility="Visible" 
+                          ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                          SelectiveScrollingGrid.SelectiveScrollingOrientation="Vertical">
+
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Id" Width="0" DisplayMemberBinding="{Binding MemId}"/>
+                                <GridViewColumn x:Name="col1" Header="Concepto" DisplayMemberBinding="{Binding Name}"/>
+                                <GridViewColumn x:Name="col2" Header="Precio" DisplayMemberBinding="{Binding Price}" />
+                                <GridViewColumn x:Name="col3" Header="Fecha de Alta" DisplayMemberBinding="{Binding DateAdd}" />
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </materialDesign:TransitioningContent>
+</UserControl>

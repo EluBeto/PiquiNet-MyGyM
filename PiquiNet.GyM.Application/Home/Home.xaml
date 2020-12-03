@@ -1,0 +1,179 @@
+﻿<Window x:Class="PiquiNet.GyM.Application.Home.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PiquiNet.GyM.Application.Home"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Home" 
+        Height="600" 
+        Width="1024"
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" 
+        ResizeMode="NoResize">
+    <Grid Background="#FFEEEEEE" MouseDown="Grid_MouseDown">
+        <StackPanel VerticalAlignment="Top" Background="Black">
+            <Grid Background="#FF0069C0" Height="10"></Grid>
+            <Grid Margin="5">
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="335,0,177,0" Width="502">
+                    <TextBlock x:Name="Reloj" VerticalAlignment="Center" FontSize="20" FontFamily="Century Gothic" Margin="150 0" Foreground="WhiteSmoke" FontWeight="Bold"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10 0">
+                    <materialDesign:Badged x:Name="NumAlert" Margin="0,0,10,0">
+                        <Button Width="30" Margin="0,0,0,0" ToolTip="Notificaciónes" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
+                            <materialDesign:PackIcon x:Name="IconAlert" Kind="BellOutline"/>
+                        </Button>
+                    </materialDesign:Badged>
+                    <!--<materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
+                        <materialDesign:PopupBox.ToggleContent>
+                            <materialDesign:PackIcon Kind="BellOutline" Width="30" Margin="0,0,0,0" ToolTip="Notificaciónes" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0"
+                                Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=materialDesign:PopupBox}, Path=Foreground}"/>
+                        </materialDesign:PopupBox.ToggleContent>
+                        <StackPanel>
+                            <TextBlock Text="Test1" />
+                            <TextBlock Text="Test2" />
+                            <TextBlock Text="Test3" />
+                        </StackPanel>
+                    </materialDesign:PopupBox>-->
+                    <Button Width="30" ToolTip="Configuración" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Margin="0 0 20 0" Click="Button_Click">
+                        <materialDesign:PackIcon Kind="Settings"/>
+                    </Button>
+                    <Button x:Name="Btn_Max" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="Btn_Max_Click">
+                        <materialDesign:PackIcon x:Name="max_min"/>
+                    </Button>
+
+                    <Menu IsMainMenu="True" Margin="0,5,0,5" Background="Black" Foreground="#FF858484">
+                        <MenuItem Header="_Salir" Height="20">
+                            <MenuItem  Header="Cerrar aplicación" Click="Btn_Exit_Click">
+                                  <MenuItem.Icon>
+                                    <materialDesign:PackIcon
+                                      Kind="ExitToApp" Width="20" Height="20"/>
+                                  </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem x:Name="btnCerrarSesion" Header="_Cerrar sesión" Click="BtnCerrarSesion_Click">
+                                <MenuItem.Icon>
+                                    <materialDesign:PackIcon
+                                      Kind="ExitRun" Width="20" Height="20"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                    </Menu>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+        
+        <Grid x:Name="GridPM" Margin="250 50 0 0">
+            <Grid.Background>
+                <ImageBrush x:Name="imgFondo" Stretch="UniformToFill"/>
+            </Grid.Background>
+            <Grid x:Name="GridPrincipal" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        </Grid>
+       
+        <Grid Width="250" HorizontalAlignment="Left" Background="#FF222222">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Background="#FF302F2F" Width="250" Height="160">
+                <Ellipse Width="85" Height="85" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 10" Stroke="White">
+                    <Ellipse.Fill>
+                        <ImageBrush x:Name="ImgBrushUser" ImageSource="/PiquiNet.GyM.Application;component/Resources/Assets/elu.jpg" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <TextBlock Text="¡Hola!" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 0" FontSize="18" Foreground="White"></TextBlock>
+                <TextBlock x:Name="NomUser" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 5" FontSize="18" Foreground="White"></TextBlock>
+                <TextBlock x:Name="idUser" Visibility="Collapsed"></TextBlock>
+            </StackPanel>
+
+            <materialDesign:TransitioningContent x:Name="TransitioningContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
+                <Grid Visibility="Collapsed" x:Name="GridCursor" Margin="0 170 0 0" Background="#FF0069C0" Width="10" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top"/>
+            </materialDesign:TransitioningContent>
+
+            <ListView x:Name="ListViewMenu" Margin="0,170,0,44" Foreground="LightGray" FontFamily="Century Gothic" FontSize="17" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0">
+
+                <ListViewItem x:Name="ItemInicio" Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Home" Width="25" Height="25" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
+                        <TextBlock Text="Início" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="ItemUsuarios" Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="User" Width="25" Height="25" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
+                        <TextBlock Text="Usuarios" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="ItemRoles" Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="AccountEdit" Width="25" Height="25" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
+                        <TextBlock Text="Roles" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="ItemSocios" Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="People" Width="25" Height="25" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
+                        <TextBlock Text="Socios" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="ItemMembrecia" Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Checkbook" Width="25" Height="25" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
+                        <TextBlock Text="Membrecias" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="ItemClases" Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Adjust" Width="25" Height="25" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
+                        <TextBlock Text="Clases" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="ItemProductos" Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="SeatFlat" Width="25" Height="25" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
+                        <TextBlock Text="Productos" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="ItemCompras" Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="PaymentSettings" Width="25" Height="25" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
+                        <TextBlock Text="Compras" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="ItemVentas" Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Sale" Width="25" Height="25" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
+                        <TextBlock Text="Ventas" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="ItemRegistro" Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Register" Width="25" Height="25" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
+                        <TextBlock Text="Registro" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="ItemReportes" Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Report" Width="25" Height="25" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
+                        <TextBlock Text="Reportes" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem x:Name="ItemConfig" Height="45">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="SettingsApplications" Width="25" Height="25" VerticalAlignment="Center" Margin="5"></materialDesign:PackIcon>
+                        <TextBlock Text="Configuración" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+
+            </ListView>
+            <TextBlock Margin="57,0,0,4" Text="Copyright © 2019 PiquiNet" Foreground="White" Height="16" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="150"/>
+        </Grid>
+    </Grid>
+</Window>

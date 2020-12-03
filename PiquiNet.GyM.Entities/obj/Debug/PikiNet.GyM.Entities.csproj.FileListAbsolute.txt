@@ -1,0 +1,12 @@
+C:\Proyectos\PokiNet\GyM\PikiNet.GyM.Solution\PikiNet.GyM.Entities\bin\Debug\PikiNet.GyM.Entities.dll
+C:\Proyectos\PokiNet\GyM\PikiNet.GyM.Solution\PikiNet.GyM.Entities\bin\Debug\PikiNet.GyM.Entities.pdb
+C:\Proyectos\PokiNet\GyM\PikiNet.GyM.Solution\PikiNet.GyM.Entities\obj\Debug\PikiNet.GyM.Entities.csprojAssemblyReference.cache
+C:\Proyectos\PokiNet\GyM\PikiNet.GyM.Solution\PikiNet.GyM.Entities\obj\Debug\PikiNet.GyM.Entities.csproj.CoreCompileInputs.cache
+C:\Proyectos\PokiNet\GyM\PikiNet.GyM.Solution\PikiNet.GyM.Entities\obj\Debug\PikiNet.GyM.Entities.dll
+C:\Proyectos\PokiNet\GyM\PikiNet.GyM.Solution\PikiNet.GyM.Entities\obj\Debug\PikiNet.GyM.Entities.pdb
+C:\Proyectos\PikiNet\GyM\PikiNet.GyM.Solution\PikiNet.GyM.Entities\bin\Debug\PikiNet.GyM.Entities.dll
+C:\Proyectos\PikiNet\GyM\PikiNet.GyM.Solution\PikiNet.GyM.Entities\bin\Debug\PikiNet.GyM.Entities.pdb
+C:\Proyectos\PikiNet\GyM\PikiNet.GyM.Solution\PikiNet.GyM.Entities\obj\Debug\PikiNet.GyM.Entities.csproj.CoreCompileInputs.cache
+C:\Proyectos\PikiNet\GyM\PikiNet.GyM.Solution\PikiNet.GyM.Entities\obj\Debug\PikiNet.GyM.Entities.dll
+C:\Proyectos\PikiNet\GyM\PikiNet.GyM.Solution\PikiNet.GyM.Entities\obj\Debug\PikiNet.GyM.Entities.pdb
+C:\Proyectos\PikiNet\GyM\PikiNet.GyM.Solution\PikiNet.GyM.Entities\obj\Debug\PikiNet.GyM.Entities.csprojAssemblyReference.cache
