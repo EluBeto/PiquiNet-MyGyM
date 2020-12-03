@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Proyectos\PiquiNet\GyM\PiquiNet.GyM.Solution\PiquiNet.GyM.Application\obj\Debug\
+C:\Proyectos\PiquiNet\PquiNet-MyGyM\PiquiNet.GyM.Application\obj\Debug\
 PiquiNet.GyM.Application
 none
 false
 DEBUG;TRACE
-C:\Proyectos\PiquiNet\GyM\PiquiNet.GyM.Solution\PiquiNet.GyM.Application\App.xaml
+C:\Proyectos\PiquiNet\PquiNet-MyGyM\PiquiNet.GyM.Application\App.xaml
 10-1640983606
 
 14-308139430
-27551692382
+27-1109381842
 Controls\Home\UserControlHome.xaml;Controls\Membership\UserControlMembership.xaml;Controls\Partners\UserControlPartners.xaml;Controls\Registry\UserControlRegistry.xaml;Controls\Role\UserControlRole.xaml;Controls\Settings\UserControlSettings.xaml;Controls\Users\UserControlUsers.xaml;Home\Home.xaml;Login\MainWindow.xaml;RegisterView\RegisterActivity.xaml;
 
 False
