@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="PiquiNet.GyM.Application.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="es" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="PiquiNet.GyM.Application.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="es" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="GyM.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -98,7 +98,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kYhcsXrhxyROcFC36CLWiJWan+houSWxuSsCCmjjFuY=</dsig:DigestValue>
+        <dsig:DigestValue>3R5PV75PQP25M4wjGc0BBAWXfVAKZljIyEG7dTfUCfk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QQObS3AZalKVg7kH/84Ls1mGP/k3Sdrd41Jt7GV46Mc=</dsig:DigestValue>
+        <dsig:DigestValue>phW5XVNPLofcE+U0id5yPIUYuaAkjIg/AmKGtmFRj3s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -122,7 +122,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3zRYm5QaNq2B5SAOFWXCP5E072BYVK1XbYpcWcrIRgs=</dsig:DigestValue>
+        <dsig:DigestValue>UyJ5PLDOegmW1fpd/aaO3qLOvv9Nrl4HpRMCh73nZm0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
