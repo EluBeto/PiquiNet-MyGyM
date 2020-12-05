@@ -179,3 +179,5 @@ C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Application\obj\Debug\PiquiNet
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Application\obj\Debug\PiquiNet.GyM.Application.csproj.CopyComplete
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Application\obj\Debug\PiquiNet.GyM.Application.exe
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Application\obj\Debug\PiquiNet.GyM.Application.pdb
+C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Application\bin\Debug\DB_GyM.mdf
+C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Application\bin\Debug\DB_GyM_log.ldf
