@@ -21,7 +21,6 @@ C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Entities\bin\Debug\PiquiNet.Gy
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Entities\bin\Debug\PiquiNet.GyM.Entities.pdb
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Entities\bin\Debug\DPUruNet.dll
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Entities\bin\Debug\DPUruNet.xml
-C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Entities\obj\Debug\PiquiNet.GyM.Entities.csprojAssemblyReference.cache
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Entities\obj\Debug\PiquiNet.GyM.Entities.csproj.CoreCompileInputs.cache
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Entities\obj\Debug\PiquiNet.GyM.Entities.csproj.CopyComplete
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Entities\obj\Debug\PiquiNet.GyM.Entities.dll

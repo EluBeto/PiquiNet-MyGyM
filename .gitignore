@@ -1,4 +1,10 @@
 *.cache
 
-PiquiNet.GyM.Application/bin/
+iquiNet.GyM.Application/obj/Debug/
 PiquiNet.GyM.Application/obj/
+PiquiNet.GyM.Bussiness/obj/Debug/
+PiquiNet.GyM.Data/obj/Debug/
+PiquiNet.GyM.Entities/obj/Debug/
+PiquiNet.GyM.FingerPrint/obj/Debug/
+PiquiNet.GyM.Utilities/obj/Debug/
+PiquiNet.Tools/obj/Debug/

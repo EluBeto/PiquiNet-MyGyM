@@ -111,8 +111,8 @@ C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Data\bin\Debug\PiquiNet.GyM.Fi
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Data\bin\Debug\PiquiNet.GyM.Utilities.pdb
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Data\bin\Debug\MahApps.Metro.pdb
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Data\bin\Debug\MahApps.Metro.xml
+C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Data\obj\Debug\PiquiNet.GyM.Data.csprojAssemblyReference.cache
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Data\obj\Debug\PiquiNet.GyM.Data.csproj.CoreCompileInputs.cache
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Data\obj\Debug\PiquiNet.GyM.Data.csproj.CopyComplete
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Data\obj\Debug\PiquiNet.GyM.Data.dll
 C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Data\obj\Debug\PiquiNet.GyM.Data.pdb
-C:\Proyectos\PiquiNet\PiquiNet-MyGyM\PiquiNet.GyM.Data\obj\Debug\PiquiNet.GyM.Data.csprojAssemblyReference.cache
