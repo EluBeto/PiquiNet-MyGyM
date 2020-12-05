@@ -183,13 +183,13 @@
       <dsig:DigestValue>TkQCYxYFJmdqEB0a82CCXG/26jz1ljqOvirwHMIBhkU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="PiquiNet.GyM.Application.exe.config" size="7278">
+  <file name="PiquiNet.GyM.Application.exe.config" size="7234">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>QW/yE3+II7jlG3BjoGoFD1eGP+FV0q28wxYf7nU1Rec=</dsig:DigestValue>
+      <dsig:DigestValue>tSb/iSAO27ebpcY7RvghbJeTqwFvL7dFsMwWbE2HG1U=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
